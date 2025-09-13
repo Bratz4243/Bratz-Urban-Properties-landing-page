@@ -24,18 +24,25 @@
   </div>
 </header>
 
-<section class="token-header text-white">
+<!-- HERO (photo, not orange background) -->
+<section class="bg-white text-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
     <div class="lg:col-span-9 relative">
       <div class="relative rounded-md overflow-hidden">
         <img src="assets/hero-house.jpg" class="w-full h-[380px] object-cover hero-img" alt="Hero House"/>
+
+        <!-- small white info card -->
         <div class="absolute top-4 right-4 bg-white/95 text-[#0E2A33] rounded-sm p-3 w-[min(420px,90%)]">
           <p class="text-sm font-bold">Revitalizing Homes. Building Generational Wealth.</p>
           <p class="text-xs text-[#274D58]">We acquire, renovate, and manage quality homes across Greater Houston.</p>
         </div>
-<div class="absolute bottom-20 left-0 bg-[#9A3412]/90 px-4 py-2 ...
+
+        <!-- orange ribbon -->
+        <div class="absolute bottom-20 left-0 bg-[#9A3412]/90 px-4 py-2 rounded-r-sm text-sm font-semibold">
           Investing in HOUSES SINCE 2021
         </div>
+
+        <!-- logo tag -->
         <div class="absolute bottom-6 left-4 flex items-center gap-3">
           <img src="assets/logo.png" class="w-12 h-12 bg-white p-1 rounded-full" alt="logo"/>
           <div>
@@ -43,6 +50,8 @@
             <div class="text-xs text-white/80">Company Logo</div>
           </div>
         </div>
+
+        <!-- social buttons -->
         <div class="absolute top-16 left-4 flex flex-col gap-2">
           <a href="#" class="nav-chip">Facebook</a>
           <a href="#" class="nav-chip">Instagram</a>
@@ -50,6 +59,8 @@
         </div>
       </div>
     </div>
+
+    <!-- orange CTA panel (stays orange) -->
     <div class="lg:col-span-3">
       <div class="token-cta rounded-md p-5">
         <h2 class="text-lg font-semibold">Request a deal review</h2>
@@ -60,12 +71,13 @@
           <input name="email" type="email" class="w-full bg-white rounded p-2" placeholder="Email" required>
           <input name="phone" class="w-full bg-white rounded p-2" placeholder="Phone">
           <textarea name="message" class="w-full bg-white rounded p-2 min-h-[84px]" placeholder="Tell us about your property or goals…" required></textarea>
-        <button type="submit" class="w-full bg-[#C2410C] hover:bg-[#9A3412] text-white rounded py-2">Send</button>
+          <button type="submit" class="w-full bg-[#C2410C] hover:bg-[#9A3412] text-white rounded py-2">Send</button>
         </form>
       </div>
     </div>
   </div>
 </section>
+
 
 <section id="about" class="bg-[#F1F7F9]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -115,7 +127,6 @@
 
 <section id="contact" class="bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div>
       <div class="inline-block token-header px-4 py-2 rounded-t-sm text-lg font-semibold">Contact Us</div>
       <div class="border rounded-t-none p-6 border-muted">
         <p class="text-sm text-muted">Get A Free Consultation</p>
@@ -151,7 +162,6 @@
   </div>
 </footer>
 
-<script src="assets/theme.js"></script>
 
 </body>
 </html>
