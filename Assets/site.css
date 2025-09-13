@@ -71,3 +71,18 @@ footer a {
 footer a:hover {
   color: #FFD7B5; /* light orange */
 }
+/* === Dark-Orange Theme Overrides === */
+.token-header { background: #9A3412 !important; color: #ffffff !important; }
+.token-cta    { background: #C2410C !important; color: #ffffff !important; }
+.token-section{ background: #ffffff !important; }
+
+.nav-chip {
+  display:inline-block; padding:0.35rem 0.75rem; border-radius:9999px;
+  background:rgba(255,255,255,0.15); color:#ffffff; font-size:.875rem; font-weight:500;
+  transition:background .2s,color .2s;
+}
+.nav-chip:hover { background:#C2410C; color:#ffffff; }
+
+.text-muted { color:#6b7280; }
+.border-muted { border-color:#e5e7eb; }
+
