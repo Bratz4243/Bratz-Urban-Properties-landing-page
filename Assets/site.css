@@ -173,8 +173,6 @@ input[name="website"]{ display:none !important; }
     --border:#16343a;
     --focus:#2aa8c6;
   }
-}
-
 /* ===== THEMED ELEMENT HELPERS (non-Tailwind) ===== */
 body{ background:var(--bg); color:var(--ink); }
 .token-header{ background:var(--brand) !important; color:#fff !important; border-color:color-mix(in srgb, var(--brand) 85%, #fff 15%) !important; }
