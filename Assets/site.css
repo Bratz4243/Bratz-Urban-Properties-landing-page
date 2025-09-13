@@ -42,3 +42,37 @@ input:focus, textarea:focus {
 .bg-muted {
   background-color: #f9fafb; /* gray-50 */
 }
+/* === Force Dark-Orange Theme (CSS-only) === */
+.token-header {
+  background: #9A3412 !important;   /* burnt dark orange */
+  color: #ffffff !important;
+}
+
+.token-cta {
+  background: #C2410C !important;   /* dark orange */
+  color: #ffffff !important;
+}
+
+.token-section {
+  background: #ffffff !important;
+}
+
+/* Nav chips */
+.nav-chip {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.15);
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-chip:hover {
+  background: #C2410C;
+  color: #ffffff;
+}
+
+/* Optional helpers */
+.text-muted { color: #6b7280; }
+.border-muted { border-color: #e5e7eb; }
