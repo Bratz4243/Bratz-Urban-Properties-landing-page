@@ -1,9 +1,9 @@
 
 /* Brand tokens */
 :root{
-  --teal-900:#0E2A33;      /* background / headings */
-  --teal-600:#1F5C6B;      /* nav buttons default */
-  --teal-700:#237085;      /* nav buttons hover */
+  --brown-900:#0E2A33;      /* background / headings */
+  --brown-600:#1F5C6B;      /* nav buttons default */
+  --brown-700:#237085;      /* nav buttons hover */
   --cyan-400:#34B3CE;      /* CTA panel background */
   --ink:#0E2A33;           /* text color on light */
   --paper:#FFFFFF;         /* white surfaces */
