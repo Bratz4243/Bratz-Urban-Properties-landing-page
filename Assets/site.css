@@ -1,106 +1,12 @@
-
-/* Brand tokens */
-:root{
-  --teal-900:#0E2A33;      /* background / headings */
-  --teal-600:#1F5C6B;      /* nav buttons default */
-  --brown-700:#237085;      /* nav buttons hover */
-  --cyan-400:#34B3CE;      /* CTA panel background */
-  --ink:#0E2A33;           /* text color on light */
-  --paper:#FFFFFF;         /* white surfaces */
-  --muted:#4B6B75;         /* secondary text */
-  --border:#DDE7EA;        /* card borders */
-}
-*{ box-sizing:border-box; }
-html,body{ margin:0; padding:0; }
-html{ scroll-behavior:smooth; }
-body{
-  color:var(--ink);
-  background:var(--paper);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  line-height:1.5;
-}
-a{
-  text-decoration:none;
-  color:inherit;
-}
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible{
-  outline:2px solid #94d9e7; /* soft cyan */
-  outline-offset:2px;
-  border-radius:6px;
-}
-.btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  gap:.5rem; padding:.5rem .9rem;
-  background:var(--teal-900); color:#fff; border:0; border-radius:.5rem;
-  cursor:pointer; font-weight:600; transition:background .15s ease, transform .05s ease;
-}
-.btn:hover{ background:#0b2228; }
-.btn:active{ transform:translateY(1px); }
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea{
-  border:1px solid var(--border);
-  border-radius:.5rem;
-  transition:border-color .15s ease, box-shadow .15s ease;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-textarea:focus{
-  border-color:#8bd5e4;
-  box-shadow:0 0 0 3px rgba(52,179,206,.2);
-}
-textarea{ resize:vertical; }
-
-/* Hide honeypot spam trap input (name="website") */
-input[name="website"]{ display:none !important; }
-
-/* Cards + simple surfaces (in case Tailwind classes are missing) */
-.card{
-  background:#fff; border:1px solid var(--border); border-radius:.5rem;
-  box-shadow: 0 1px 2px rgba(14,42,51,.04);
-}
-
-/* Utility helpers (optional) */
-.text-muted{ color:var(--muted); }
-.border-muted{ border-color:var(--border); }
-
-/* Header nav button colors if you ever switch off Tailwind classes */
-.nav-chip{
-  background:var(--teal-600); color:#fff; border-radius:.375rem;
-  padding:.25rem .75rem; transition:background .15s ease;
-}
-.nav-chip:hover{ background:var(--teal-700); }
-
-/* Hero image height tweak on small screens */
-@media (max-width: 640px){
-  .hero-img{ height:260px !important; }
-}
-
-/* Print-friendly tweaks for the style card/contact info */
-@media print{
-  header, footer, .no-print{ display:none !important; }
-  section{ break-inside:avoid; }
-  a{ text-decoration:underline; }
-}
 body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   line-height: 1.5;
-}
-/* Headings */
+}/* Headings */
 h1, h2, h3, h4 {
   font-weight: 700;
   color: #0E2A33; /* dark teal/navy */
-}
-/* Paragraphs */
+}/* Paragraphs */
 p {
   color: #3A3A3A; /* neutral dark gray for contrast */
   margin-bottom: 0.75rem;
@@ -122,10 +28,11 @@ input, textarea {
 input:focus, textarea:focus {
   border-color: #C2410C; /* dark orange focus */
   box-shadow: 0 0 0 2px rgba(194, 65, 12, 0.3);
-}
+}/* Navigation pill links */
 .nav-chip {
   text-decoration: none;
 }
+/* Utility overrides */
 .text-muted {
   color: #6b7280; /* gray-500 */
 }
@@ -135,4 +42,3 @@ input:focus, textarea:focus {
 .bg-muted {
   background-color: #f9fafb; /* gray-50 */
 }
-
