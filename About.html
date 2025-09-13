@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>About — Bratz Urban Properties</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/site.css">
+  <!-- Cache-bust CSS so updates show -->
+  <link rel="stylesheet" href="assets/site.css?v=4">
 </head>
 <body class="bg-white text-[#0E2A33]">
 
@@ -24,7 +25,8 @@
   </div>
 </header>
 
-<section class="bg-white">
+<!-- About Section -->
+<section class="token-section">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <h1 class="text-3xl font-extrabold mb-4">About Us</h1>
     <p class="text-lg text-[#274D58] mb-6">
@@ -50,6 +52,7 @@
   </div>
 </section>
 
+<!-- Footer -->
 <footer class="token-header border-t border-white/10 text-white/80 text-sm">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
     <a href="index.html" class="flex items-center gap-2">
@@ -64,6 +67,5 @@
   </div>
 </footer>
 
-<script src="assets/theme.js"></script>
 </body>
 </html>
