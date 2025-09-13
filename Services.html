@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Services — Bratz Urban Properties</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/site.css">
+  <!-- cache-bust to force latest colors -->
+  <link rel="stylesheet" href="assets/site.css?v=4">
 </head>
 <body class="bg-white text-[#0E2A33]">
 
@@ -24,24 +25,25 @@
   </div>
 </header>
 
-<section class="bg-white">
+<!-- Use token-section so the theme CSS controls this area too -->
+<section class="token-section">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <h1 class="text-3xl font-extrabold mb-6">Our Services</h1>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="border rounded p-6">
+      <div class="border border-muted rounded p-6">
         <h2 class="text-xl font-semibold mb-2">Property Acquisition</h2>
         <p>We identify undervalued homes and secure them for renovation and long-term investment.</p>
       </div>
-      <div class="border rounded p-6">
+      <div class="border border-muted rounded p-6">
         <h2 class="text-xl font-semibold mb-2">Renovation & Development</h2>
         <p>From modern upgrades to complete remodels, we restore homes to maximize value and livability.</p>
       </div>
-      <div class="border rounded p-6">
+      <div class="border border-muted rounded p-6">
         <h2 class="text-xl font-semibold mb-2">Property Management</h2>
         <p>We manage rentals with a focus on quality tenants, steady cash flow, and property care.</p>
       </div>
-      <div class="border rounded p-6">
+      <div class="border border-muted rounded p-6">
         <h2 class="text-xl font-semibold mb-2">Investor Partnerships</h2>
         <p>We collaborate with investors seeking consistent returns through real estate opportunities.</p>
       </div>
@@ -63,6 +65,5 @@
   </div>
 </footer>
 
-<script src="assets/theme.js"></script>
 </body>
 </html>
