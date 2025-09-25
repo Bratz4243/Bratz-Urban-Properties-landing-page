@@ -1,94 +1,165 @@
-body {
-  color: #0E2A33;
-  background-color: #ffffff;
+/* =========================
+   Bratz Urban Properties — Polished Theme
+   ========================= */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@600&display=swap');
+
+:root{
+  --orange: #C2410C;      /* CTA */
+  --orange-dark: #9A3412; /* Header/Footer */
+  --ink: #0E2A33;         /* Primary text */
+  --muted: #6b7280;       /* Secondary text */
+  --card: #ffffff;        /* Card bg */
+  --line: #e5e7eb;        /* Border */
 }
 
-/* Header & Footer */
+/* Base */
+html, body { scroll-behavior: smooth; }
+body {
+  color: var(--ink);
+  background: #fff;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+  line-height: 1.55;
+}
+
+/* Typography polish */
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: .2px;
+  color: var(--ink);
+}
+h1 { font-size: clamp(28px, 5vw, 40px); }
+h2 { font-size: clamp(22px, 3.6vw, 28px); }
+
+/* Header & Footer (brand) */
 .token-header {
-  background-color: #9A3412; /* burnt dark orange */
-  color: #ffffff;
+  background-color: var(--orange-dark);
+  color: #fff;
 }
 
 /* CTA sections */
 .token-cta {
-  background-color: #C2410C; /* strong dark orange */
-  color: #ffffff;
+  background-color: var(--orange);
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(194,65,12,.25);
 }
 
-/* Section default */
+/* Section surface */
 .token-section {
-  background-color: #ffffff;
-  color: #0E2A33;
+  background-color: #fff;
 }
 
 /* Navigation chips */
 .nav-chip {
   display: inline-block;
-  padding: 0.35rem 0.75rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 9999px;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  font-size: 0.875rem;
+  background-color: rgba(255,255,255,0.16);
+  color: #fff;
+  font-size: 0.9rem;
   font-weight: 500;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color .2s, transform .15s;
 }
-.nav-chip:hover {
-  background-color: #C2410C; /* dark orange hover */
-  color: #ffffff;
-}
+.nav-chip:hover { background-color: rgba(255,255,255,0.3); transform: translateY(-1px); }
 
 /* Buttons */
-button,
-.btn {
-  background-color: #C2410C;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
-  font-weight: 600;
-  transition: background-color 0.2s ease-in-out;
+button, .btn {
+  background-color: var(--orange);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: transform .12s ease, box-shadow .2s ease, background-color .2s;
+  box-shadow: 0 8px 18px rgba(194,65,12,.22);
 }
-button:hover,
-.btn:hover {
-  background-color: #9A3412;
+button:hover, .btn:hover {
+  background-color: var(--orange-dark);
+  transform: translateY(-1px);
 }
 
-/* Form inputs */
+/* Inputs */
 input, textarea {
-  border: 1px solid #ccc;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: .6rem .75rem;
+  background: #fff;
+  transition: box-shadow .2s, border-color .2s;
 }
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
   outline: none;
-  border-color: #C2410C;
-  box-shadow: 0 0 0 2px rgba(194, 65, 12, 0.25);
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(194,65,12,.18);
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 22px rgba(0,0,0,.05);
+}
+
+/* Soft section header label */
+.section-label {
+  display: inline-block;
+  padding: .5rem .9rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: var(--orange-dark);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Subtle separators */
+.border-muted { border-color: var(--line); }
+.text-muted { color: var(--muted); }
+
+/* Hero improvements */
+.hero-wrap { position: relative; border-radius: 16px; overflow: hidden; }
+.hero-img { width: 100%; height: 100%; object-fit: cover; }
+.hero-gradient:before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.10) 0%, rgba(0,0,0,.35) 70%, rgba(0,0,0,.55) 100%);
+  pointer-events: none;
+}
+.hero-card {
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,.92);
+  border-radius: 12px;
+  box-shadow: 0 16px 32px rgba(0,0,0,.12);
+}
+
+/* Sticky CTA on desktop */
+@media (min-width: 1024px){
+  .sticky-cta { position: sticky; top: 24px; }
+}
+
+/* Services grid cosmetics */
+.service-tile {
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  padding: 1rem;
+  font-weight: 600;
+  display: flex; align-items: center; gap: .6rem;
+  transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.service-tile:hover {
+  transform: translateY(-2px);
+  border-color: #d6d7dc;
+  box-shadow: 0 12px 24px rgba(0,0,0,.06);
 }
 
 /* Footer links */
-footer a {
-  color: #ffffff;
-  transition: color 0.2s;
-}
-footer a:hover {
-  color: #FFD7B5; /* light orange */
-}
-/* === Dark-Orange Theme Overrides === */
-.token-header { background: #9A3412 !important; color: #ffffff !important; }
-.token-cta    { background: #C2410C !important; color: #ffffff !important; }
-.token-section{ background: #ffffff !important; }
+footer a { color: #fff; opacity: .85; transition: opacity .2s; }
+footer a:hover { opacity: 1; }
 
-.nav-chip {
-  display:inline-block; padding:0.35rem 0.75rem; border-radius:9999px;
-  background:rgba(255,255,255,0.15); color:#ffffff; font-size:.875rem; font-weight:500;
-  transition:background .2s,color .2s;
+/* Small utility */
+.badge {
+  display:inline-flex; align-items:center; gap:.35rem;
+  font-size:.8rem; font-weight:700; color:#fff;
+  background: var(--orange-dark); padding:.35rem .6rem; border-radius: 9999px;
 }
-.nav-chip:hover { background:#C2410C; color:#ffffff; }
-
-.text-muted { color:#6b7280; }
-.border-muted { border-color:#e5e7eb; }
-/* Hero image smaller */
-.hero-img {
-  max-height: 220px;  /* adjust as needed */
-  object-fit: cover;
-  width: 100%;
-}
-
