@@ -324,3 +324,44 @@ footer .copyright {
   color: var(--gold);
   font-weight: 700;
 }
+/* === Section Titles === */
+.section h2,
+.founder-title {
+  font-size: 1.8rem;             /* bigger text */
+  font-weight: 900;              /* extra bold */
+  color: var(--deep);            /* deep red from palette */
+  text-transform: uppercase;     /* ALL CAPS for impact */
+  letter-spacing: 1px;           /* slight spacing for readability */
+  border-bottom: 3px solid var(--gold); /* gold accent underline */
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+/* === Nav Links === */
+header nav a {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+/* Gold underline on hover */
+header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+header nav a:hover {
+  color: var(--gold);
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
