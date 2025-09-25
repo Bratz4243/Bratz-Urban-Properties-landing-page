@@ -85,4 +85,10 @@ footer a:hover {
 
 .text-muted { color:#6b7280; }
 .border-muted { border-color:#e5e7eb; }
+/* Hero image smaller */
+.hero-img {
+  max-height: 220px;  /* adjust as needed */
+  object-fit: cover;
+  width: 100%;
+}
 
