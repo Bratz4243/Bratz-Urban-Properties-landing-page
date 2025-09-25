@@ -13,19 +13,39 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">Bratz Urban<span class="dot">.</span></div>
-      <nav class="main-nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact" class="cta-ghost">Contact</a>
-      </nav>
-      <a href="#contact" class="btn-primary cta-top">Request a Deal Review</a>
-    </div>
-  </header>
+<header class="bg-[#C64A19] text-white shadow-md">
+  <div class="max-w-[1100px] mx-auto flex justify-between items-center py-4 px-5">
+    <!-- Logo / Brand -->
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/logo.png" alt="Bratz Urban Properties Logo" class="w-8 h-8">
+      <span class="font-bold text-lg">Bratz Urban Properties</span>
+    </a>
 
+    <!-- Nav -->
+    <nav class="hidden md:flex gap-5 font-semibold">
+      <a href="#about" class="hover:text-[#D9A441]">About</a>
+      <a href="#services" class="hover:text-[#D9A441]">Services</a>
+      <a href="#portfolio" class="hover:text-[#D9A441]">Portfolio</a>
+      <a href="#team" class="hover:text-[#D9A441]">Founder</a>
+      <a href="#contact" class="hover:text-[#D9A441]">Contact</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button class="md:hidden text-2xl" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div id="mobileMenu" class="hidden md:hidden bg-[#8B2E2E] text-white px-5 py-3 space-y-2">
+    <a href="#about" class="block hover:text-[#D9A441]">About</a>
+    <a href="#services" class="block hover:text-[#D9A441]">Services</a>
+    <a href="#portfolio" class="block hover:text-[#D9A441]">Portfolio</a>
+    <a href="#team" class="block hover:text-[#D9A441]">Founder</a>
+    <a href="#contact" class="block hover:text-[#D9A441]">Contact</a>
+  </div>
+</header>
+  
   <main>
 <!-- HERO -->
 <section class="hero"
@@ -176,14 +196,55 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div>© <span id="year"></span> Bratz Urban Properties Corporation</div>
-      <div class="socials">Follow: <a href="#">Facebook</a> · <a href="#">Instagram</a></div>
-    </div>
-  </footer>
+<!-- FOOTER -->
+<footer class="bg-[#3A3A3A] text-white mt-10">
+  <div class="max-w-[1100px] mx-auto px-5 py-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
 
-  <script src="script.js"></script>
+    <!-- Column 1: Logo + tagline -->
+    <div>
+      <h3 class="text-lg font-bold">Bratz Urban Properties</h3>
+      <p class="text-sm text-gray-300 mt-2">
+        Revitalizing homes and building generational wealth in Greater Houston.
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h4 class="font-semibold mb-2">Quick Links</h4>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#about" class="hover:text-[#D9A441]">About</a></li>
+        <li><a href="#services" class="hover:text-[#D9A441]">Services</a></li>
+        <li><a href="#portfolio" class="hover:text-[#D9A441]">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-[#D9A441]">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact + Social -->
+    <div>
+      <h4 class="font-semibold mb-2">Contact Us</h4>
+      <p class="text-sm">📍 Houston, TX</p>
+      <p class="text-sm">📧 info@bratzurban.com</p>
+      <p class="text-sm">📞 (123) 456-7890</p>
+
+      <div class="flex gap-4 mt-3 text-lg">
+        <a href="#" class="hover:text-[#D9A441]">🌐</a>
+        <a href="#" class="hover:text-[#D9A441]">📘</a>
+        <a href="#" class="hover:text-[#D9A441]">🐦</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="bg-[#2A2A2A] text-center text-sm py-3">
+    © <span id="year"></span> Bratz Urban Properties. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  // auto-update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
