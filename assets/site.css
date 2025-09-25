@@ -309,3 +309,18 @@ footer .copyright {
   .hero h1 { font-size: 1.3rem; }
   .hero-stats { flex-direction: column; }
 }
+.team-card .bio {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+.team-card .bio strong {
+  color: var(--deep);
+}
+
+.team-card .bio span {
+  color: var(--gold);
+  font-weight: 700;
+}
