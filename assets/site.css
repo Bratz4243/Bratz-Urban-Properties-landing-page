@@ -100,3 +100,23 @@ body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica
   .hero h1{font-size:1.3rem}
   .hero-stats{flex-direction:column}
 }
+/* portfolio images */
+.work-card {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:12px;
+}
+.work-card img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:8px;
+}
+.work-card .sub {
+  font-size:0.9rem;
+  color:var(--muted);
+}
+
+
