@@ -1,172 +1,155 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Bratz Urban Properties — Home</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/site.css?v=12">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bratz Urban Properties — Revitalizing Homes</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-white text-[#0E2A33]">
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Bratz Urban<span class="dot">.</span></div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="cta-ghost">Contact</a>
+      </nav>
+      <a href="#contact" class="btn-primary cta-top">Request a Deal Review</a>
+    </div>
+  </header>
 
-<!-- HEADER -->
-<header class="token-header text-white border-b border-white/10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-2">
-      <img src="assets/logo.png" class="w-8 h-8" alt="Bratz Urban Properties Logo" />
-      <span class="font-semibold">Bratz Urban Properties Corporation</span>
-    </a>
-    <nav class="hidden md:flex gap-3">
-      <a href="#about" class="nav-chip">About</a>
-      <a href="#services" class="nav-chip">Services</a>
-      <a href="about.html" class="nav-chip">Portfolio</a>
-      <a href="contact.html" class="nav-chip">Contacts</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO FULL SCREEN -->
-<section class="bg-white text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
-    <div class="lg:col-span-9 relative">
-      <div class="relative rounded-md overflow-hidden h-screen">
-        <!-- Full screen hero image -->
-        <img src="assets/hero-house.jpg" class="w-full h-full object-cover" alt="Hero House"/>
-
-        <!-- Info card -->
-        <div class="absolute top-6 right-6 bg-white/95 text-[#0E2A33] rounded-sm p-3 w-[min(420px,90%)]">
-          <p class="text-sm font-bold">Revitalizing Homes. Building Generational Wealth.</p>
-          <p class="text-xs text-[#274D58]">We acquire, renovate, and manage quality homes across Greater Houston.</p>
-        </div>
-
-        <!-- Orange ribbon -->
-        <div class="absolute bottom-24 left-0 bg-[#9A3412]/90 px-4 py-2 rounded-r-sm text-sm font-semibold">
-          Investing in HOUSES SINCE 2021
-        </div>
-
-        <!-- Hero logo -->
-        <div class="absolute bottom-10 left-6 flex items-center gap-3">
-          <img src="assets/logo.png" class="w-10 h-10 bg-white p-1 rounded-full" alt="logo"/>
-          <div>
-            <div class="text-xl font-bold">Bratz Urban Properties</div>
-            <div class="text-xs text-white/80">Company Logo</div>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="container hero-inner">
+          <h1>Revitalizing Homes.<br /><span class="accent">Building Generational Wealth.</span></h1>
+          <p class="lead">We acquire, renovate, and manage quality homes across Greater Houston.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn-primary">Request a Deal Review</a>
+            <a href="#services" class="btn-ghost">Our Services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong class="num" data-target="3">3</strong> Years Experience</div>
+            <div class="stat"><strong class="num" data-target="100">100%</strong> Quality Assurance</div>
+            <div class="stat"><strong class="num" data-target="50">50+</strong> Homes Managed</div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Socials -->
-        <div class="absolute top-20 left-6 flex flex-col gap-2">
-          <a href="#" class="nav-chip">Facebook</a>
-          <a href="#" class="nav-chip">Instagram</a>
-          <a href="#" class="nav-chip">Twitter</a>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section light">
+      <div class="container">
+        <div class="split">
+          <div class="split-left">
+            <h2>About Bratz Urban Properties</h2>
+            <p>We specialize in acquiring and renovating residential properties to improve communities and create lasting value for homeowners and investors alike. Our approach focuses on thoughtful design, cost-efficient renovations, and long-term stewardship.</p>
+            <a href="#contact" class="btn-primary">Get a Free Strategy Call</a>
+          </div>
+          <div class="split-right card">
+            <h3>Fast Facts</h3>
+            <ul class="facts">
+              <li><span class="big">3+</span><span>Years Experience</span></li>
+              <li><span class="big">100%</span><span>Quality Assurance</span></li>
+              <li><span class="big">50+</span><span>Homes Managed</span></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- CTA -->
-    <div class="lg:col-span-3 flex items-center">
-      <div class="token-cta rounded-md p-5 w-full">
-        <h2 class="text-lg font-semibold">Request a deal review</h2>
-        <p class="text-sm font-semibold">Free strategy call</p>
-        <form data-form="lead" class="mt-3 space-y-3">
-          <input name="website" class="hidden">
-          <input name="name" class="w-full bg-white rounded p-2" placeholder="Name" required>
-          <input name="email" type="email" class="w-full bg-white rounded p-2" placeholder="Email" required>
-          <input name="phone" class="w-full bg-white rounded p-2" placeholder="Phone">
-          <textarea name="message" class="w-full bg-white rounded p-2 min-h-[84px]" placeholder="Tell us about your property or goals…" required></textarea>
-          <button type="submit" class="w-full bg-[#C2410C] hover:bg-[#9A3412] text-white rounded py-2">Send</button>
-        </form>
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="center">Services We Offer</h2>
+        <div class="services-grid">
+          <article class="service">
+            <div class="icon">🏠</div>
+            <h4>Acquisitions</h4>
+            <p>Quick, fair offers for sellers and rigorous underwriting for investors.</p>
+          </article>
+          <article class="service">
+            <div class="icon">🛠️</div>
+            <h4>Design-Build Renovation</h4>
+            <p>Full project management from design through final walkthrough.</p>
+          </article>
+          <article class="service">
+            <div class="icon">📊</div>
+            <h4>Project Management</h4>
+            <p>Experienced contractors and transparent budgeting.</p>
+          </article>
+          <article class="service">
+            <div class="icon">🏘️</div>
+            <h4>Buy & Hold Rentals</h4>
+            <p>Long-term wealth building through rental strategies.</p>
+          </article>
+          <article class="service">
+            <div class="icon">⚖️</div>
+            <h4>Legal & Title Support</h4>
+            <p>Smooth closings with trusted partners.</p>
+          </article>
+          <article class="service">
+            <div class="icon">🤝</div>
+            <h4>Investment Partnerships</h4>
+            <p>Co-investment opportunities for aligned partners.</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ABOUT -->
-<section id="about" class="token-section">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <div class="inline-block token-header px-4 py-2 rounded-t-sm text-lg font-semibold">Fact About Us</div>
-    <div class="grid grid-cols-2 md:grid-cols-6 gap-4 token-section border border-muted p-6 rounded-b-sm">
-      <div class="flex flex-col items-center gap-1 border rounded-sm py-4">
-        <div class="text-2xl font-bold">3</div>
-        <div class="text-xs text-[#4B6B75] text-center px-1">Years of Experience</div>
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="section light">
+      <div class="container">
+        <h2 class="center">Before & After — Selected Projects</h2>
+        <div class="portfolio-grid">
+          <div class="work-card">Before<br /><span class="sub">123 Maple St.</span></div>
+          <div class="work-card">After<br /><span class="sub">123 Maple St.</span></div>
+          <div class="work-card">Before<br /><span class="sub">678 Oak Ave.</span></div>
+          <div class="work-card">After<br /><span class="sub">678 Oak Ave.</span></div>
+        </div>
       </div>
-      <div class="flex flex-col items-center gap-1 border rounded-sm py-4">
-        <div class="text-2xl font-bold">—</div>
-        <div class="text-xs text-[#4B6B75] text-center px-1">Completed Projects</div>
-      </div>
-      <div class="flex flex-col items-center gap-1 border rounded-sm py-4">
-        <div class="text-2xl font-bold">—</div>
-        <div class="text-xs text-[#4B6B75] text-center px-1">Acquisition Partners</div>
-      </div>
-      <div class="flex flex-col items-center gap-1 border rounded-sm py-4">
-        <div class="text-2xl font-bold">—</div>
-        <div class="text-xs text-[#4B6B75] text-center px-1">Community Awards</div>
-      </div>
-      <div class="flex flex-col items-center gap-1 border rounded-sm py-4">
-        <div class="text-2xl font-bold">100%</div>
-        <div class="text-xs text-[#4B6B75] text-center px-1">Quality Assurance</div>
-      </div>
-      <div class="flex flex-col items-center gap-1 border rounded-sm py-4">
-        <div class="text-2xl font-bold">—</div>
-        <div class="text-xs text-[#4B6B75] text-center px-1">Trusted Vendors</div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- SERVICES -->
-<section id="services" class="token-section">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <div class="inline-block token-cta px-4 py-2 rounded-t-sm text-lg font-semibold">Services We Offer</div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 token-section border border-muted p-6 rounded-b-sm">
-      <div class="border border-muted rounded p-4 font-semibold">Acquisitions</div>
-      <div class="border border-muted rounded p-4 font-semibold">Construction Planning</div>
-      <div class="border border-muted rounded p-4 font-semibold">Design-Build / Renovation</div>
-      <div class="border border-muted rounded p-4 font-semibold">Project Management</div>
-      <div class="border border-muted rounded p-4 font-semibold">Buy & Hold Rentals</div>
-      <div class="border border-muted rounded p-4 font-semibold">Legal & Title Support</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="token-section">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div>
-      <div class="inline-block token-header px-4 py-2 rounded-t-sm text-lg font-semibold">Contact Us</div>
-      <div class="border rounded-t-none p-6 border-muted">
-        <p class="text-sm text-muted">Get A Free Consultation</p>
-        <form data-form="lead" class="pt-4 space-y-3">
-          <input name="website" class="hidden">
-          <input name="name" class="w-full border rounded p-2" placeholder="Name" required>
-          <input name="email" type="email" class="w-full border rounded p-2" placeholder="E-mail" required>
-          <input name="phone" class="w-full border rounded p-2" placeholder="Phone">
-          <textarea name="message" class="w-full border rounded p-2 min-h-[96px]" placeholder="Tell us about your project…" required></textarea>
-          <button type="submit" class="bg-[#C2410C] hover:bg-[#9A3412] text-white rounded px-4 py-2">Send Your Request</button>
-        </form>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h3>Request a deal review</h3>
+          <p class="muted">Free strategy call — tell us about the property or your goals.</p>
+          <form id="contactForm" class="contact-form">
+            <label><input type="text" name="name" placeholder="Name" required></label>
+            <label><input type="email" name="email" placeholder="Email" required></label>
+            <label><input type="tel" name="phone" placeholder="Phone"></label>
+            <label><textarea name="message" placeholder="Tell us about your property or goals..." rows="4"></textarea></label>
+            <button class="btn-primary" type="submit">Send Request</button>
+          </form>
+        </div>
+        <aside class="contact-info card">
+          <h4>Contact Info</h4>
+          <p><strong>Phone:</strong> 346-642-6449</p>
+          <p><strong>Address:</strong> 13201 Northwest Fwy, Suite 615, Houston, TX 77040</p>
+          <p><strong>Email:</strong> <a href="mailto:info@bratzurbanproperties.com">info@bratzurbanproperties.com</a></p>
+          <div class="badges">
+            <div class="badge">Verified</div>
+            <div class="badge">Preferred Vendor</div>
+          </div>
+        </aside>
       </div>
-    </div>
-    <div class="border rounded p-6 border-muted space-y-3">
-      <div>Phone: <span class="font-medium">346-642-6449</span></div>
-      <div>Address: <span class="font-medium">13201 Northwest Fwy, Suite 615, Houston, TX 77040</span></div>
-      <div>Email: <a href="mailto:lashawn@bratzurbanproperties.com" class="font-medium underline">lashawn@bratzurbanproperties.com</a></div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-<!-- FOOTER -->
-<footer class="token-header border-t border-white/10 text-white/80 text-sm">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
-    <a href="index.html" class="flex items-center gap-2">
-      <img src="assets/logo.png" class="w-7 h-7 bg-white p-0.5 rounded-full" alt="Bratz Urban Properties Logo" />
-      <span>© 2025 Bratz Urban Properties Corporation. All rights reserved.</span>
-    </a>
-    <div class="flex items-center gap-4">
-      <a class="hover:text-white" href="#about">About</a>
-      <a class="hover:text-white" href="#services">Services</a>
-      <a class="hover:text-white" href="#contact">Contact</a>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <span id="year"></span> Bratz Urban Properties Corporation</div>
+      <div class="socials">Follow: <a href="#">Facebook</a> · <a href="#">Instagram</a></div>
     </div>
-  </div>
-</footer>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
